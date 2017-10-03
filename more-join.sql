@@ -142,7 +142,7 @@ SELECT title, COUNT(actorid) as cast
 FROM movie JOIN casting on id=movieid
 WHERE yr = 1978
 GROUP BY title
-ORDER BY cast DESC
+ORDER BY cast DESC, title
 
 --#16
 /*
